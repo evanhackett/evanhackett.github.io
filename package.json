@@ -1,0 +1,16 @@
+{
+  "name": "tailwind_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^0.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "./node_modules/.bin/tailwind build styles.css -c ./tailwind.js -o ./output.css --no-autoprefixer"
+  },
+  "author": "",
+  "license": "ISC"
+}
