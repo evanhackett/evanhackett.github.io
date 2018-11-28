@@ -5,14 +5,17 @@
   "main": "",
   "dependencies": {},
   "devDependencies": {
+    "cssnano": "^4.1.7",
+    "postcss-cli": "^6.0.1",
     "purgecss": "^1.1.0",
     "tailwindcss": "^0.7.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-css": "./node_modules/.bin/tailwind build styles.css -c ./tailwind.js -o ./output.css --no-autoprefixer",
-    "purgecss": "./node_modules/.bin/purgecss --out build/css --config ./purgecss.config.js",
-    "build-css": "npm run generate-css && npm run purgecss"
+    "generate-css": "./node_modules/.bin/tailwind build styles.css -c ./tailwind.js -o ./build/tmp/output.css --no-autoprefixer",
+    "purgecss": "./node_modules/.bin/purgecss --out build/tmp --config ./purgecss.config.js",
+    "postcss": "./node_modules/.bin/postcss build/tmp/output.css > build/css/output.css",
+    "build-css": "npm run generate-css && npm run purgecss && npm run postcss"
   },
   "author": "Evan Hackett",
   "license": "ISC"

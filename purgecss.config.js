@@ -9,7 +9,7 @@ class TailwindExtractor {
 
 module.exports = {
   content: ['index.html'],
-  css: ['output.css'],
+  css: ['build/tmp/output.css'],
   extractors: [
     {
       extractor: TailwindExtractor,
