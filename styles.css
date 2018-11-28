@@ -61,3 +61,16 @@
  * @import "utilities/skew-transforms";
  */
 
+
+.text-custom-pink {
+  /* color: config('colors.custom-pink') */
+  color: #FECCFE;
+}
+
+.text-custom-grey {
+  color: #555555;
+}
+
+.bg-custom-grey {
+  background-color: #555555;
+}
