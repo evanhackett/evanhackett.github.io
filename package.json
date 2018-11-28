@@ -1,16 +1,19 @@
 {
-  "name": "tailwind_practice",
+  "name": "landing-page",
   "version": "1.0.0",
   "description": "",
-  "main": "tailwind.js",
+  "main": "",
   "dependencies": {},
   "devDependencies": {
+    "purgecss": "^1.1.0",
     "tailwindcss": "^0.7.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "./node_modules/.bin/tailwind build styles.css -c ./tailwind.js -o ./output.css --no-autoprefixer"
+    "generate-css": "./node_modules/.bin/tailwind build styles.css -c ./tailwind.js -o ./output.css --no-autoprefixer",
+    "purgecss": "./node_modules/.bin/purgecss --out build/css --config ./purgecss.config.js",
+    "build-css": "npm run generate-css && npm run purgecss"
   },
-  "author": "",
+  "author": "Evan Hackett",
   "license": "ISC"
 }
