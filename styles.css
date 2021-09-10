@@ -1,76 +1,69 @@
-/**
- * This injects Tailwind's base styles, which is a combination of
- * Normalize.css and some additional base styles.
- *
- * You can see the styles here:
- * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/preflight";
- */
-@tailwind preflight;
-
-/**
- * This injects any component classes registered by plugins.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/components";
- */
-@tailwind components;
-
-/**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
- * override them.
- *
- * Example:
- *
- * .btn { ... }
- * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- * @import "components/forms";
- */
-
-/**
- * This injects all of Tailwind's utility classes, generated based on your
- * config file.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/utilities";
- */
-@tailwind utilities;
-
-/**
- * Here you would add any custom utilities you need that don't come out of the
- * box with Tailwind.
- *
- * Example :
- *
- * .bg-pattern-graph-paper { ... }
- * .skew-45 { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "utilities/background-patterns";
- * @import "utilities/skew-transforms";
- */
-
-
-.text-custom-pink {
-  /* color: config('colors.custom-pink') */
-  color: #FECCFE;
+body > div {
+  /* background-color: black; */
+  background: rgba(255, 255, 255, .0);
+  color: white;
 }
 
-.text-custom-grey {
-  color: #555555;
+.content {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
 }
 
-.bg-custom-grey {
-  background-color: #555555;
+.main-content {
+  margin: 0 auto;
+}
+
+canvas {
+  z-index: -1;
+  margin: 0;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+}
+
+header {
+  font-size: xx-large;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.5em;
+  text-align: center;
+  margin-top: 0;
+}
+
+.links {
+  margin: 1em auto;
+}
+
+.links img {
+  margin: 0 1em 0 0;
+}
+
+.links img:hover {
+  cursor: pointer;
+}
+
+#link-description {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+}
+
+.work-experience {
+  font-size: x-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 auto;
+}
+
+.work-experience a {
+  color: #0080FF;
+}
+
+.work-experience a:hover {
+  color: #40C0FF;
 }

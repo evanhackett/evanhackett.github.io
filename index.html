@@ -1,49 +1,51 @@
-<head>
-  <title>Evan Hackett</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="build/css/output.css">
-</head>
-<body class="text-white">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
 
-  <header class="bg-purple-darkest">
-    <div class="flex justify-between items-center py-6">
-      <div class="">
-	<h1 class="text-white pl-4 font-mono">EVAN HACKETT</h1>
-      </div>
-      <div class="text-right font-mono mr-4">
-	<a href="https://evanhackett.com/blog" class="mr-2 text-white text-lg font-semibold no-underline leading-loose">Blog</a>
-	<a href="https://github.com/evanhackett" class="text-white text-lg font-semibold no-underline">GitHub</a>
-      </div>
+    <canvas id="canvas"></canvas>
+    
+    <div class="content">
+        <header>
+            <h1>Evan Hackett</h1>
+        </header>
+
+        <h2>Software Engineer & Educator</h2>
+
+        <div class="main-content">
+            <div class="work-experience">
+                <h3>Currently</h3>
+                <p>Deploying state of the art machine learning algorithms to the cloud at <a href="https://steg.ai/">Steg AI</a></p>
+                
+                
+                <h3>Previous work</h3>
+                <p>Educating future software developers at <a href="https://pdxcodeguild.com/">PDX Code Guild</a></p>
+                <p>React Native developer at <a href="https://thecyrkus.com/">the Cyrkus</a> and the <a href="http://www.universaldesignlab.com/">Universal Design Lab</a></p>
+                <p>Full Stack Software Engineer at <a href="https://www.surgeforward.com/">Surge LLC</a></p>
+                <p>Want to get in touch? Contact me at EvanWHackett at gmail.com.</p>
+            </div>
+    
+            <div class="links">
+              <img id="octocat" src="images/Octocat.png" alt="github" height="100">
+              <img id="blog" src="images/blog.png" alt="blog" width="100">
+              <img id="twitter" src="images/twitter_icon.png" alt="twitter" width="100">
+              <img id="linkedin" src="images/linkedin.png" alt="linkedin" height="100">
+            </div>
+    
+            <div id="link-description"></div>
+        </div>
     </div>
-  </header>
-  
-  <div class="text-custom-grey flex">
-
-	  <div class="p-4 sm:p-16 font-mono text-xl sm:text-2xl font-semibold">
-        <p>Hello! I'm Evan and I'm a software engineer and educator living in Portland, Oregon.</p>
-        
-        <h2 class="mt-10">Currently</h2>
-
-        <p class="mt-5">Deploying state of the art machine learning algorithms to the cloud at <a href="https://steg.ai/" class="text-custom-pink">Steg AI</a>.</p>
-        
-        <p class="mt-5">Educating the next wave of software developers at <a class="text-custom-pink" href="https://pdxcodeguild.com/">PDX Code Guild</a>.</p>
 
 
-        <h2 class="mt-10">Previous work</h2>
-        
-	    <p class="mt-5">React Native developer at <a href="https://thecyrkus.com/" class="text-custom-pink">the Cyrkus</a> and the <a class="text-custom-pink" href="http://www.universaldesignlab.com/">Universal Design Lab</a></p>
-        
-	    <p class="mt-5">Full Stack Developer at <a href="https://www.surgeforward.com/" class="text-custom-pink">Surge LLC<a></p>
+    <script src="index.js"></script>
+    <script src="./stars/main.js"></script>
+    <script src="./stars/canvas.js"></script>
+    <script src="./stars/star.js"></script>
 
-	    <p class="mt-5">Hacker in Residence at <a href="https://www.hackreactor.com/" class="text-custom-pink">Hack Reactor<a></p>
-
-	    <p class="mt-5">Content Developer at <a href="https://www.linkedin.com/company/textflow-media/" class="text-custom-pink">Textflow Media<a></p>
-
-	    <p class="mt-10">Want to get in touch? Contact me at <a href="mailto:evanwhackett@gmail.com" class="text-custom-pink">EvanWHackett@gmail.com<a></p>
-	    
-	  </div>
-
-  </div>
-    
-    
-</body>
+  </body>
+</html>
