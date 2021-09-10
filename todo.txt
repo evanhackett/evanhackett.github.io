@@ -1,2 +1,4 @@
 
-test on mobile
+fix star animation not being centered on mobile.
+
+Make social icons smaller.
