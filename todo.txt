@@ -1,8 +1,4 @@
 
 fix star animation not being centered on mobile.
 
-Make social icons smaller.
-
-change social icons into links (anchor tags), and trigger the warp-drive animation on hover instead of on click.
-
-Also trigger warp drive animation on other links hover (not just social icons but company links as well)
+fix line not wrapping on mobile.
